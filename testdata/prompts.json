@@ -1,0 +1,14 @@
+[
+    {
+        "question": "Capital of India",
+        "expected": "New Delhi"
+    },
+    {
+        "question": "Capital of France",
+        "expected": "Paris"
+    },
+    {
+        "question": "Capital of Japan",
+        "expected": "Tokyo"
+    }
+]
