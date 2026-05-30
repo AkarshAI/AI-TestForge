@@ -1,4 +1,5 @@
 import pytest
+from utilities.logger import logger
 
 from evaluators.factuality \
 import evaluate_factuality
@@ -34,5 +35,12 @@ def test_factual_accuracy(
             result["answer"],
             data["expected"]
         )
+
+    logger.info(
+        f"Question={data['question']}"
+    )
+    logger.info(
+        f"Response={result['answer']}"
+    )
 
     assert is_correct
