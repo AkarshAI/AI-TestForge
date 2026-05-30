@@ -6,9 +6,14 @@ import evaluate_latency
 from utilities.file_loader \
 import load_json
 
+
+
+
 test_data = load_json(
     "testdata/prompts.json"
 )
+@pytest.mark.regression
+@pytest.mark.performance
 
 
 @pytest.mark.parametrize(

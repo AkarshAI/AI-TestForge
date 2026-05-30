@@ -6,10 +6,15 @@ import evaluate_factuality
 from utilities.file_loader \
 import load_json
 
+
+
 test_data = load_json(
     "testdata/prompts.json"
 )
 
+@pytest.mark.llm
+
+@pytest.mark.smoke
 
 @pytest.mark.parametrize(
     "data",

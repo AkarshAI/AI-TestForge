@@ -9,7 +9,11 @@ import load_json
 test_data = load_json(
     "testdata/prompts.json"
 )
+@pytest.mark.llm
 
+@pytest.mark.hallucination
+
+@pytest.mark.regression
 
 @pytest.mark.parametrize(
     "data",
