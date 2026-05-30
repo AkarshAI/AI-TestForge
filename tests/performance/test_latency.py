@@ -1,7 +1,7 @@
 import pytest
 
-from evaluators.factuality \
-import evaluate_factuality
+from evaluators.latency \
+import evaluate_latency
 
 from utilities.file_loader \
 import load_json
@@ -15,7 +15,7 @@ test_data = load_json(
     "data",
     test_data
 )
-def test_factual_accuracy(
+def test_latency(
         llm_client,
         data
 ):
@@ -24,10 +24,6 @@ def test_factual_accuracy(
         data["question"]
     )
 
-    is_correct = \
-        evaluate_factuality(
-            result["answer"],
-            data["expected"]
-        )
-
-    assert is_correct
+    assert evaluate_latency(
+        result["latency"]
+    )

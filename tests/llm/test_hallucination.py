@@ -1,7 +1,7 @@
 import pytest
 
-from evaluators.factuality \
-import evaluate_factuality
+from evaluators.hallucination \
+import evaluate_hallucination
 
 from utilities.file_loader \
 import load_json
@@ -15,7 +15,7 @@ test_data = load_json(
     "data",
     test_data
 )
-def test_factual_accuracy(
+def test_hallucination(
         llm_client,
         data
 ):
@@ -24,10 +24,10 @@ def test_factual_accuracy(
         data["question"]
     )
 
-    is_correct = \
-        evaluate_factuality(
+    hallucinated = \
+        evaluate_hallucination(
             result["answer"],
             data["expected"]
         )
 
-    assert is_correct
+    assert hallucinated is False
