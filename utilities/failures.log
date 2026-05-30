@@ -1,0 +1,12 @@
+import json
+
+with open(
+    "logs/failures.log",
+    "a",
+    encoding="utf-8"
+) as file:
+
+    file.write(
+        f"\nFAILED: "
+        f"{item.name}"
+    )
