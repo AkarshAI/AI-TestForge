@@ -1,11 +1,5 @@
-def evaluate_hallucination(
-        response,
-        expected
-):
-
-    if expected.lower() \
-        in response.lower():
-
-        return False
-
-    return True
+def evaluate_hallucination(response: str, expected: str) -> bool:
+    """Detect hallucination when the response does not contain the expected fact."""
+    if not response:
+        return True
+    return expected.lower() not in response.lower()

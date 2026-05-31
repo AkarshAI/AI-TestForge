@@ -1,0 +1,20 @@
+[
+    {
+        "question": "Capital of India",
+        "expected": "New Delhi",
+        "context": "New Delhi is the capital of India and the seat of government.",
+        "source": "world_facts.txt"
+    },
+    {
+        "question": "Capital of France",
+        "expected": "Paris",
+        "context": "Paris is the capital city of France and a major European destination.",
+        "source": "world_facts.txt"
+    },
+    {
+        "question": "Capital of Japan",
+        "expected": "Tokyo",
+        "context": "Tokyo is the capital of Japan and is famous for its skyline.",
+        "source": "world_facts.txt"
+    }
+]

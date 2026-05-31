@@ -1,9 +1,0 @@
-from utilities.logger import logger
-
-logger.info(
-    f"Question={data['question']}"
-)
-
-logger.info(
-    f"Response={result['answer']}"
-)

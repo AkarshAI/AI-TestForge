@@ -1,0 +1,12 @@
+[
+    {
+        "query": "What is the weather in Mumbai?",
+        "expected_tool": "weather_tool",
+        "expected_answer": "Mumbai temperature is 30C"
+    },
+    {
+        "query": "Search for the latest AI news.",
+        "expected_tool": "web_search",
+        "expected_answer": "Latest AI news: new model improves retrieval accuracy."
+    }
+]
